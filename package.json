@@ -4,7 +4,7 @@
   "description": "Convert arguments object to an array",
   "main": "index.js",
   "scripts": {
-    "test": "standard && tape index.js"
+    "test": "standard && tape test.js"
   },
   "repository": {
     "type": "git",

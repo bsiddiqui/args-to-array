@@ -2,6 +2,10 @@ var test = require('tape')
 var argsToArray = require('./')
 
 test(function (t) {
-  t.equal(argsToArray({ 0: 'foo', 1: 'bar' }), ['foo', 'bar'])
-  t.equal(argsToArray({ 0: 'foo' }), ['foo'])
+  function test () {
+    return argsToArray(arguments)
+  }
+  t.equal(test(1, 2), [1, 2])
+  t.equal(test(1), [1])
+  t.end()
 })

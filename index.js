@@ -1,9 +1,9 @@
 'use strict'
 
-module.exports = function argsToArray () {
-  var args = new Array(arguments.length)
-  for (var i = 0; i < args.length; i++) {
-    args[i] = arguments[i]
+module.exports = function argsArrayToArray (args) {
+  var argsArray = new Array(args.length)
+  for (var i = 0; i < argsArray.length; i++) {
+    argsArray[i] = args[i]
   }
-  return args
+  return argsArray
 }
